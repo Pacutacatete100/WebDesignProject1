@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
 body {
 	margin: 0;
 }
+
+.name {
+	font-family: 'Fira Sans';
+	font-size: 50px;
+}
+
 .top {
-	background-color: aqua;
 	width: 100%;
-	height: 450px;
+	height: 550px;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -12,7 +19,6 @@ body {
 	align-items: center;
 }
 .bottom {
-	background-color: blueviolet;
 	width: 100%;
 	height: 272px;
 	margin: 0;
@@ -22,16 +28,15 @@ body {
 	align-items: center;
 }
 .topitems {
-	background-color: bisque;
 	width: 50%;
 	height: 70px;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .bottomitems {
-	background-color: #b96464;
 	width: 48%;
 	height: 272px;
 	display: flex;
@@ -40,27 +45,28 @@ body {
 	align-items: center;
 }
 .bottomcenteritem {
-	background-color: #5884c5;
 	width: 50%;
 	height: 45%;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .pages {
-	background-color: #58c589;
 	width: 30%;
 	height: 50px;
+	font-family: 'Fira Sans';
+	font-size: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
 }
 .bottomcenteritemlink {
-	background-color: #7958c5;
 	width: 30%;
 	height: 50px;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -75,7 +81,6 @@ body {
 	flex-direction: row;
 }
 .leftside {
-	background-color: #58c57c;
 	width: 35%;
 	height: 722px;
 	display: flex;
@@ -84,16 +89,15 @@ body {
 	align-items: space;
 }
 .favorite-projects {
-	background-color: #5b37ad;
 	width: 100%;
 	height: 45%;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 .rightside {
-	background-color: #1a97e0;
 	width: 65%;
 	height: 722px;
 	display: flex;
@@ -103,18 +107,74 @@ body {
 }
 
 .biography {
-	background-color: #e07a1a;
 	width: 70%;
 	height: 30%;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
+.overlay1 {
+	position: inherit;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #008cba;
+}
+
+.overlay2 {
+	position: inherit;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #008cba;
+}
+
+.fave1:hover .overlay1 {
+	opacity: 1;
+}
+
+.fave2:hover .overlay2 {
+	opacity: 1;
+}
+
+.fave1 {
+	width: 100%;
+	height: 100%;
+	background-image: url('/img/WhatsApp\ Image\ 2020-03-02\ at\ 11.23.12\ PM.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.fave2 {
+	width: 100%;
+	height: 100%;
+	background-image: url('/img/WhatsApp\ Image\ 2020-03-02\ at\ 5.51.30\ PM.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.favetext2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
 /* past projects */
 .mainpast {
-	background-color: antiquewhite;
 	height: 722px;
 	width: 100%;
 	display: flex;
@@ -133,17 +193,17 @@ body {
 }
 
 .projectlist {
-	background-color: #c754ae;
 	width: 100%;
 	height: 100%;
+	margin: 20px;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .projectscreenshots {
-	background-color: #794f86;
 	width: 30%;
 	height: 40%;
 	display: flex;
@@ -153,13 +213,14 @@ body {
 }
 
 .tabs {
-	background-color: #5884c5;
 	width: 10%;
 	height: 70%;
+	margin: 20px;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-end;
 }
 
 /* hire me */
@@ -170,7 +231,6 @@ body {
 }
 
 .top-hire-me {
-	background-color: #1a97e0;
 	width: 100%;
 	height: 150px;
 	display: flex;
@@ -180,9 +240,9 @@ body {
 }
 
 .talktome {
-	background-color: #b96464;
 	width: 30%;
 	height: 100px;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -190,7 +250,6 @@ body {
 }
 
 .skills {
-	background-color: #7958c5;
 	width: 40%;
 	height: 500px;
 	display: flex;
@@ -200,9 +259,9 @@ body {
 }
 
 .rateandcontact {
-	background-color: #e07a1a;
 	width: 40%;
 	height: 100%;
+	font-family: 'Fira Sans';
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -211,8 +270,63 @@ body {
 
 /* current project */
 
-.topcurrent {
-	background-color: #0b816e;
+.maincurrent {
 	width: 100%;
-	height: 300px;
+	height: 722px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.topcurrent {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottomcurrent {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tabscurrent {
+	width: 50%;
+	height: 20%;
+	font-family: 'Fira Sans';
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.toptop {
+	width: 30%;
+	height: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.t {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.description {
+	font-family: 'Fira Sans';
+}
+.paragraphdiv {
+	width: 70%;
+	height: 100%;
 }
